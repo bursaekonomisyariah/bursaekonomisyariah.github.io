@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Simulasi Kredit Syariah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Simulasi Kredit Syariah</h1>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Perusahaan">
+    </div>
+    <div class="form-group">
+      <label for="harga-barang">Harga Barang (IDR)</label>
+      <input type="text" id="harga-barang" onkeyup="formatRupiah(this)">
+    </div>
+    <div class="form-group">
+      <label for="uang-muka">Uang Muka (IDR)</label>
+      <input type="text" id="uang-muka" onkeyup="formatRupiah(this)">
+    </div>
+    <div class="form-group">
+      <label for="tenor">Tenor (bulan)</label>
+      <input type="number" id="tenor" min="1" max="24">
+    </div>
+    <button class="btn-calculate" onclick="calculate()">Hitung</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
