@@ -1,1 +1,0 @@
-# bursaekonomisyariah.github.io
